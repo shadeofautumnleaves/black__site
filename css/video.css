@@ -1,0 +1,27 @@
+.video__content {
+    display: flex;
+    justify-content: center;
+    max-width: 719px;
+    height: 650px;
+    margin: 0 auto;
+    filter: brightness(55%);
+    transition: filter 0.3s ease;
+    position: relative;
+}
+
+.video__content:hover {
+    filter: brightness(100%);
+}
+
+.number4 {
+    position: absolute;
+    z-index: -20;
+right: -46%;
+top: 27%;
+}
+
+@media screen and (max-width: 1000px) {
+    .number4 {
+        display: none;
+    }
+}

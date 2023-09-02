@@ -1,0 +1,16 @@
+.map {
+    margin-top: 180px;
+}
+
+.map__content {
+    background: #626262;
+    height: 358px;
+    margin-top: 100px;
+    position: relative;
+}
+
+.number5 {
+    position: absolute;
+    z-index: -20;
+    transform: translate( -60%, -150%);
+}

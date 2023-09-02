@@ -1,0 +1,74 @@
+.our-rooms {
+    margin-top: 120px;
+}
+
+.image__container {
+    max-width: 48%;
+    margin: 0 auto;
+    position: relative;
+    background: var(--dark, #242B33);
+    opacity: 60%;
+    transition: opacity 0.5s ease;
+}
+
+.image__container:hover {
+    background: var(--dark, #242B33);
+    opacity: 100%;
+}
+
+.our-rooms img {
+    max-width: 100%;
+}
+
+h2 {
+    color: var(--accent, #D4C17F);
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.our-rooms__content {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.image__text {
+    position: absolute;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    left: 50px;
+    bottom: 50px;
+}
+
+.number3 {
+    position: absolute;
+    right: 62%;
+    transform: translate(-20%, 20%);
+    z-index: -20;
+}
+
+@media screen and (max-width: 1000px) {
+    .our-rooms__content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    .image__text {
+        text-align: center;
+    }
+
+    .image__container {
+        max-width: 100%;
+    }
+}

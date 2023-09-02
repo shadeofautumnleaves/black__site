@@ -1,0 +1,89 @@
+.mainscreen {
+    position: absolute;
+    top: 0;
+    background: url('../img/mainscreenbg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 840px;
+    right: 0%;
+    width: 100vw;
+    z-index: 2;
+    background-position: center;
+    
+}
+
+.mainscreen__content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.mainscreen__content h1 {
+    text-align: center;
+    color: var(--accent, #D4C17F);
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.mainscreen__content img {
+    margin-top: 100px;
+}
+
+.bottom__info {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bottom__content__adress,
+.bottom__content__number {
+    display: flex;
+    align-items: center;
+}
+
+.bottom__content__adress img,
+.bottom__content__number img {
+    margin-right: 15px;
+}
+
+.bottom__info a {
+    text-decoration: none;
+    color: #FFF;
+    transition: color 0.3s ease;
+}
+.bottom__info a:hover {
+    color: #D4C17F;
+}
+
+.mouse {
+    transition: transform 0.3s ease; 
+}
+.mouse:hover {
+    transform: translateY(-8px)
+}
+
+@media screen and (max-width: 1000px) {
+    .mainscreen__content h1 {
+        font-size: 35px;
+    }
+    .bottom__info a {
+        font-size: 14px;
+    }
+    .bottom__info {
+        padding: 0 40px;
+    box-sizing: border-box;
+    }
+}
